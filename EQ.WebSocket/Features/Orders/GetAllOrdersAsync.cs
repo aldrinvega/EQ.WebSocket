@@ -93,7 +93,7 @@ public class GetAllOrdersAsync : ControllerBase
                      {
                          Id = x.wcOrders.Id,
                          phone_number = x.phoneNumber,
-                         Status = x.wcOrders.Status == "wc-processing" ? "processing" : "completed",
+                         Status = x.wcOrders.Status == "wc-serving" ? "serving" : "serving",
                          TotalAmount = x.wcOrders.TotalAmount,
                          payment_method_title = x.wcOrders.PaymentMethodTitle,
                          line_items = x.lineItems
