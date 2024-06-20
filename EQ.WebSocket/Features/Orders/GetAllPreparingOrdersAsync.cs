@@ -71,7 +71,7 @@ public class GetAllPreparingOrdersAsync : ControllerBase
         {
 
             var orders = await _context.Yv5w6h8fWcOrders
-                 .Where(wcOrders => wcOrders.Status == "wc-preaparing")
+                 .Where(wcOrders => wcOrders.Status == "wc-preparing")
                  .Select(wcOrders => new
                  {
                      wcOrders,
